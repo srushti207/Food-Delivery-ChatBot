@@ -1,0 +1,9 @@
+mysql-connector-python
+fastapi[all]
+
+
+uvicorn main.app --reload --port 8080
+open cmd
+go to food delivery chatbot
+ngrok http 8080
+copy the https link in dialogflow fulfillment.

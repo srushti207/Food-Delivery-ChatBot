@@ -69,8 +69,7 @@ ________________________________________________________________________________
 
 
 # Directory Structure
-arduino
-Copy code
+'''
 Food-Delivery-ChatBot/
 ├── main.py
 ├── app/
@@ -88,3 +87,4 @@ Food-Delivery-ChatBot/
 ├── README.md
 └── config/
     └── database_config.py
+'''

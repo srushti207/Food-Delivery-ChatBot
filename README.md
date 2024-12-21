@@ -1,17 +1,80 @@
 # Food-Delivery-ChatBot
 
-Here’s a sample README.md file for your Food Delivery ChatBot project:
+A chatbot application built with Dialogflow (NLP) and FastAPI for food ordering and delivery management. The chatbot interacts with users seamlessly to take orders, provide real-time tracking, and manage orders using MySQL as the backend database.
 
-Food Delivery ChatBot
 Overview
-The Food Delivery ChatBot is an AI-powered virtual assistant designed to streamline the food ordering process. It interacts with users, takes orders, provides restaurant recommendations, and handles delivery-related inquiries. The chatbot integrates seamlessly with popular messaging platforms, making food delivery easier and more efficient.
+The Food Delivery Chatbot simplifies food ordering processes by integrating natural language processing with an easy-to-use API. It ensures a smooth experience for users to interact with the chatbot, making ordering food more efficient and accessible.
+
+Objectives
+Enable a seamless food ordering experience through natural language interaction.
+Provide real-time order tracking for customers.
+Manage orders efficiently with MySQL for back-end storage.
+Offer a simple and responsive user interface.
+
+
+Tech Stack
+Programming Language: Python
+Frameworks: FastAPI, Dialogflow
+Frontend: HTML, CSS
+Database: MySQL
+Tools: Dialogflow for NLP integration
+
+
+Methodology
+User Interaction: The user interacts with the chatbot via the web interface or messaging platform.
+Natural Language Processing: Dialogflow processes user queries and generates appropriate responses.
+Order Management: The chatbot integrates with the backend (via FastAPI) to store and manage orders in MySQL.
+Real-Time Updates: The chatbot provides real-time tracking of food orders.
+
 
 Features
-User-Friendly Conversations: Engages in natural and intuitive conversations with users.
-Restaurant Search: Recommends restaurants based on user preferences, location, and cuisine.
-Menu Navigation: Displays menus and allows users to select items easily.
-Order Management: Handles order placement, updates, and cancellations.
-Delivery Tracking: Provides real-time updates on delivery status.
-Multi-Platform Integration: Available on platforms like WhatsApp, Telegram, and web chat.
+Conversational AI for food ordering.
+Real-time order tracking.
+MySQL database for order management and storage.
+User-friendly interface with HTML and CSS.
+Flexible deployment options.
+Setup and Installation
+Clone the Repository:
+
+bash
+Copy code
+git clone https://github.com/srushti207/Food-Delivery-ChatBot.git
+cd Food-Delivery-ChatBot
+
+pip install -r requirements.txt
+Set Up the MySQL Database:
+
+Create a MySQL database for order management.
+Update the database connection settings in the project configuration file.
+Run the Application:
+
+uvicorn main:app --reload
+Access the Application: Open your web browser and go to http://127.0.0.1:8000.
+
+Usage
+Start the chatbot application.
+Interact with the chatbot via the web interface.
+Place food orders by providing inputs through natural language.
+Track the status of your order in real-time.
 
 
+Directory Structure
+arduino
+Copy code
+Food-Delivery-ChatBot/
+├── main.py
+├── app/
+│   ├── models.py
+│   ├── views.py
+│   ├── database.py
+│   ├── routers/
+│   │   ├── chatbot.py
+│   │   └── orders.py
+│   ├── templates/
+│   │   └── ...
+│   ├── static/
+│   │   └── ...
+├── requirements.txt
+├── README.md
+└── config/
+    └── database_config.py
